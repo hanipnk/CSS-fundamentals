@@ -1,11 +1,14 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-  font-family: sans-serif;
+/* The universal selector is the lowest priority */
+/* the universal selector does not inherite but it applies to the all elements on the page */
+* {
+  /* border-top: 10px solid #1098ad; */
+}
+
+body {
   color: #444;
+  font-family: sans-serif;
+
+  border-top: 10px solid #1098ad;
 }
 
 h1,
@@ -127,3 +130,29 @@ a:active {
 }
 
 /* styling links should be listed in this order LVHA */
+
+/* Resolving conflicts */
+/* #copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green !important;
+} */
+
+/* nav a:link,
+nav p {
+  font-size: 18px;
+} */
+
+nav {
+  font-size: 18px;
+}
