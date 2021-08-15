@@ -1,5 +1,7 @@
 /* The universal selector is the lowest priority */
 /* the universal selector does not inherite but it applies to the all elements on the page */
+
+/* usefult links: HTML validator and divchecker */
 * {
   /* border-top: 10px solid #1098ad; */
   margin: 0;
@@ -209,6 +211,34 @@ button {
   left: 50px; */
   bottom: 50px;
   right: 50px;
+}
+
+/* pseudo elements */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/* adjacent sibling selector  */
+h3 + p::first-line {
+  /* color: red; */
+}
+h2 {
+  position: relative;
+}
+
+/* it does not appear in the HTML but directly into css only */
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
 }
 
 /* Resolving conflicts */
