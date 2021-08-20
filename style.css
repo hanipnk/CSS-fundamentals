@@ -6,6 +6,9 @@
   /* border-top: 10px solid #1098ad; */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  /* border-box makes total widths and hights to be what I exactly defined in css including paddings and borders
+     content-box(default),however, width = border+padding+width */
 }
 /* PAGE SECTIONS */
 body {
@@ -17,7 +20,7 @@ body {
 }
 
 .container {
-  width: 700px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -25,6 +28,7 @@ body {
 
 .main-header {
   background-color: #f7f7f7;
+
   /* padding: 20px;
   padding-left: 40px;
   padding-right: 40px; */
@@ -49,8 +53,7 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 40px;
 }
 
 /* Smaller Elements */
@@ -83,6 +86,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
@@ -133,6 +137,7 @@ footer p {
 /* removing bullet points */
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 /* .first-li {
@@ -262,3 +267,44 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+/* FLOATS */
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+aside {
+  width: 300px;
+  float: right;
+}
+footer {
+  clear: both;
+}
